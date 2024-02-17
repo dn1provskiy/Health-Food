@@ -3,31 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: #fff;
+  --main-dark-color: #150C01;
+  --main-default-size: 16px;
+  --primary-color: #dc780b;
+
+  --border-color: rgba(220, 120, 11, .1);
+  --border-button-color: rgba(220, 120, 11, .1);
+  --border-dark-color: rgba(21, 12, 1, .1);
+  
+  --header-color: #150C01;
+  --letter-base: 3.5px;
+  --letter-md: 2px;
+  
+  --bg-features-one: rgba(143,166,50,.1);
+  --bg-features-two: rgba(230,77,46,.08);
+  --bg-features-three: rgba(220,120,11,.1);
+
+  --about-color: rgb(220, 120, 11, .7);
+  --menu-color: rgb(220, 120, 11, .7);
+
+  --application: #FBF1E7;
+  --app-store-bg: #150C01;
+
+  --contact: rgb(220, 120, 11, .1);
+  --footer: #252525;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: var(--background);
+  color: var(--main-dark-color);
+  font-size: var(--main-default-size);
+  font-weight: 400;
+  scroll-behavior: smooth;
 }
